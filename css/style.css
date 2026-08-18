@@ -497,7 +497,7 @@ h3 {
   border-radius: var(--radius-full);
   background: var(--primary-light);
   color: var(--primary-dark);
-  margin-bottom: 14px;
+  margin: 0 auto 14px auto;
 }
 
 .services-grid {
@@ -564,7 +564,7 @@ h3 {
   align-items: center;
   justify-content: center;
   font-size: 1.45rem;
-  margin-bottom: 18px;
+  margin: 0 auto 18px auto; /* Centré dans toutes les tuiles */
 }
 
 .service-card h3 {
@@ -1172,17 +1172,88 @@ h3 {
   .hero-grid { grid-template-columns: 1fr; gap: 28px; }
   .hero-visual { order: -1; max-width: 280px; margin: 0 auto; }
   
+  /* En-tête Mobile & Navigation */
+  .nav-wrap {
+    height: 64px;
+    gap: 8px;
+    justify-content: space-between;
+  }
+  
+  .brand-logo {
+    min-width: 0;
+    flex-shrink: 1;
+    overflow: hidden;
+  }
+
+  .brand-name {
+    font-size: 1.15rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.15;
+  }
+
+  .brand-sub {
+    font-size: 0.65rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: 0.02em;
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .nav-phone-text {
+    display: none;
+  }
+
+  .btn-phone-header {
+    width: 36px;
+    height: 36px;
+    min-height: 36px;
+    padding: 0;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+  }
+
+  .nav-actions .btn-primary {
+    padding: 6px 12px;
+    font-size: 0.82rem;
+    min-height: 36px;
+    border-radius: var(--radius-sm);
+  }
+
+  .mobile-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    padding: 0;
+    font-size: 1.25rem;
+  }
+
   .nav-links {
     display: none;
     position: fixed;
-    top: 76px;
+    top: 64px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 76px);
+    height: calc(100vh - 64px);
     background: #ffffff;
     flex-direction: column;
-    padding: 30px 24px;
-    gap: 20px;
+    padding: 24px 20px;
+    gap: 16px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     z-index: 999;
     overflow-y: auto;
@@ -1193,14 +1264,12 @@ h3 {
   }
 
   .nav-link {
-    font-size: 1.15rem;
+    font-size: 1.12rem;
     font-weight: 600;
     border-bottom: 1px solid var(--border-light);
     width: 100%;
     padding: 12px 0;
   }
-
-  .mobile-toggle { display: block; }
   
   /* Section Accompagnements sur Mobile */
   .service-featured-wrap {
@@ -1209,15 +1278,13 @@ h3 {
   }
   .service-card-featured {
     padding: 24px 18px;
-    text-align: left;
-    align-items: flex-start;
-  }
-  .service-card-featured .service-icon {
-    margin: 0 0 14px 0;
+    text-align: center;
+    align-items: center;
   }
   .service-card-featured .service-benefits {
-    margin: 0 0 18px 0;
+    margin: 0 auto 18px auto;
     width: 100%;
+    text-align: left;
   }
   .services-grid { 
     grid-template-columns: 1fr; 
@@ -1261,10 +1328,40 @@ h3 {
 }
 
 @media (max-width: 480px) {
-  .nav-phone-text { display: none; }
-  .site-header { padding: 0 4px; }
-  .brand-name { font-size: 1.22rem; }
-  .brand-sub { font-size: 0.65rem; }
+  .nav-wrap {
+    height: 60px;
+    gap: 6px;
+  }
+  .brand-name {
+    font-size: 1.05rem;
+  }
+  .brand-sub {
+    font-size: 0.58rem;
+  }
+  .nav-actions {
+    gap: 6px;
+  }
+  .btn-phone-header {
+    width: 34px;
+    height: 34px;
+    min-height: 34px;
+  }
+  .nav-actions .btn-primary {
+    padding: 5px 10px;
+    font-size: 0.78rem;
+    min-height: 34px;
+  }
+  .mobile-toggle {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    min-height: 34px;
+    font-size: 1.18rem;
+  }
+  .nav-links {
+    top: 60px;
+    height: calc(100vh - 60px);
+  }
   .hero-buttons .btn { width: 100%; justify-content: center; }
   .consult-card-footer { flex-direction: column; align-items: flex-start; gap: 10px; }
   .consult-btn { width: 100%; justify-content: center; }
