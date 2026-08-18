@@ -2,7 +2,7 @@
 
 > Site officiel du cabinet de sophrologie et périnatalité situé au **Centre Périnatal de Blausasc (La Pointe de Contes)**.
 
-🌐 **Site en ligne :** [https://jml-sophrologie.github.io](https://jml-sophrologie.github.io)
+🌐 **Site officiel :** [https://www.jmlsophrologie.fr](https://www.jmlsophrologie.fr) (ou [https://jml-sophrologie.github.io](https://jml-sophrologie.github.io))
 
 ---
 
