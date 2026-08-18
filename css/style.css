@@ -341,7 +341,7 @@ h3 {
 
 .trust-badges {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
   gap: 14px;
   padding-top: 22px;
   border-top: 1px solid var(--border-light);
