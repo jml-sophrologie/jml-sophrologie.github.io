@@ -395,7 +395,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: 12px;
-  max-width: 270px;
+  max-width: 310px;
   animation: float 4s ease-in-out infinite;
 }
 
