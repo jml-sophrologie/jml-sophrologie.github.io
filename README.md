@@ -42,5 +42,6 @@ Site vitrine dédié à l'accompagnement en **sophrologie et périnatalité** pa
 - **Téléphone :** 07 59 70 22 72
 - **Email :** jmlsophrologie@gmail.com
 - **Instagram :** [@jml.sophro](https://www.instagram.com/jml.sophro)
+- **LinkedIn :** [Jessica Latreille](https://fr.linkedin.com/in/jessica-latreille-36a35339a)
 - **Linktree :** [linktr.ee/jmlsophrologie](https://linktr.ee/jmlsophrologie)
 
