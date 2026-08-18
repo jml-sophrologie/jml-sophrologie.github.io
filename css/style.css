@@ -336,15 +336,17 @@ h3 {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .trust-badges {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
   gap: 14px;
-  padding-top: 22px;
+  padding-top: 20px;
   border-top: 1px solid var(--border-light);
+  margin-top: 6px;
+  margin-bottom: 18px;
 }
 
 .trust-item {
