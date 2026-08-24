@@ -27,16 +27,25 @@ Site vitrine dédié à l'accompagnement en **sophrologie et périnatalité** pa
 ## 📁 Structure du projet
 
 ```text
-├── index.html            # Cabinet Blausasc / La Pointe de Contes & réservation
-├── nice.html             # Cabinet Nice (Centre Mum Care) & réservation
-├── sitemap.xml           # Plan du site indexé (Nice + Blausasc)
-├── robots.txt            # Directives moteurs de recherche
+├── index.html            # Portail d'accueil & Hub de sélection des cabinets
+├── nice.html             # Page dédiée Cabinet Nice (Centre Mum Care) & réservation
+├── blausasc.html         # Page dédiée Cabinet La Pointe de Contes & réservation
+├── sitemap.xml           # Plan du site indexé pour Google (les 3 URLs)
+├── robots.txt            # Directives pour les moteurs de recherche
 ├── css/
-│   └── style.css         # Design system & responsive
+│   └── style.css         # Design system, composants Hub & responsive
 ├── js/
 │   └── app.js            # Menu mobile & interactions
-└── images/               # Visuels & photographies
+├── images/               # Visuels & photographies
+└── _Documents de travail/# Documentation interne & configuration (github_token.txt)
 ```
+
+---
+
+## 🚀 Déploiement GitHub Pages
+
+Le déploiement est automatisé via GitHub Pages sur la branche `main`.  
+Pour tout `git push`, le jeton d'authentification GitHub (Personal Access Token) est consigné dans `_Documents de travail/github_token.txt` (`REMOTE_PUSH_URL`).
 
 ---
 
