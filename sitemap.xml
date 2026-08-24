@@ -12,4 +12,26 @@
       <image:caption>Jessica Macchi Latreille, Sophrologue et Infirmière Diplômée d'État à La Pointe de Contes et Blausasc</image:caption>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.jmlsophrologie.fr/nice.html</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.jmlsophrologie.fr/images/jessica_macchi_latreille.jpg</image:loc>
+      <image:title>Jessica Macchi Latreille — Sophrologue Centre Mum Care Nice</image:title>
+      <image:caption>Jessica Macchi Latreille, Sophrologue et Infirmière Diplômée d'État au Centre Mum Care à Nice</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.jmlsophrologie.fr/blausasc.html</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.jmlsophrologie.fr/images/jessica_macchi_latreille.jpg</image:loc>
+      <image:title>Jessica Macchi Latreille — Sophrologue Centre Périnatal Blausasc</image:title>
+      <image:caption>Jessica Macchi Latreille, Sophrologue et Infirmière Diplômée d'État au Centre Périnatal de Blausasc (La Pointe de Contes)</image:caption>
+    </image:image>
+  </url>
 </urlset>

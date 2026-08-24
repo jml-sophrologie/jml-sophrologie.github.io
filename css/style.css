@@ -193,6 +193,75 @@ h3 {
   min-height: 38px;
 }
 
+.btn-cabinet-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background-color: var(--secondary-light);
+  color: var(--secondary-hover);
+  border: 1.5px solid var(--secondary);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: var(--transition);
+  text-decoration: none;
+  min-height: 38px;
+}
+
+.btn-cabinet-switch:hover {
+  background-color: var(--secondary);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-cabinet-switch i {
+  color: var(--primary);
+  font-size: 0.9rem;
+}
+
+.btn-cabinet-switch:hover i {
+  color: #ffffff;
+}
+
+.mobile-cabinet-banner {
+  background: var(--bg-subtle);
+  border: 1.5px solid var(--secondary);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.mobile-cabinet-banner:hover {
+  background: #ffffff;
+  border-color: var(--primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.mobile-cabinet-banner .banner-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.mobile-cabinet-banner .banner-target {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 /* ==========================================================================
    NAVIGATION BAR & MOBILE DRAWER
    ========================================================================== */
@@ -529,6 +598,178 @@ h3 {
   flex-direction: column;
   position: relative;
   overflow: hidden;
+}
+
+/* ==========================================================================
+   HUB / PORTAIL D'ACCUEIL - CABINET CARDS
+   ========================================================================== */
+.hub-cabinet-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 32px;
+}
+
+@media (max-width: 840px) {
+  .hub-cabinet-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.hub-cabinet-card {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 30px 26px;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+}
+
+.hub-cabinet-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--primary);
+  opacity: 0.9;
+  transition: var(--transition);
+}
+
+.hub-cabinet-card.card-nice::before {
+  background: linear-gradient(90deg, #c97a63, #d4a373);
+}
+
+.hub-cabinet-card.card-contes::before {
+  background: linear-gradient(90deg, #607d72, #88ab9e);
+}
+
+.hub-cabinet-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.hub-card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  width: fit-content;
+}
+
+.hub-card-badge.badge-nice {
+  background: var(--primary-light);
+  color: var(--primary-dark);
+}
+
+.hub-card-badge.badge-contes {
+  background: var(--secondary-light);
+  color: var(--secondary-hover);
+}
+
+.hub-card-title {
+  font-size: 1.45rem;
+  margin-bottom: 10px;
+  color: var(--text-main);
+}
+
+.hub-card-address {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.hub-card-features {
+  list-style: none;
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: var(--text-main);
+}
+
+.hub-card-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hub-card-features i {
+  color: var(--primary);
+  font-size: 0.95rem;
+  width: 18px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.hub-cabinet-card.card-contes .hub-card-features i {
+  color: var(--secondary);
+}
+
+.hub-card-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 0.92rem;
+  transition: var(--transition);
+}
+
+.hub-card-btn.btn-nice {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+.hub-card-btn.btn-nice:hover {
+  background-color: var(--primary-hover);
+}
+
+.hub-card-btn.btn-contes {
+  background-color: var(--secondary);
+  color: #ffffff;
+}
+
+.hub-card-btn.btn-contes:hover {
+  background-color: var(--secondary-hover);
+}
+
+.hub-domicile-banner {
+  background: linear-gradient(135deg, var(--bg-subtle) 0%, #ffffff 100%);
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.9rem;
 }
 
 .service-card::before {
@@ -1084,13 +1325,13 @@ h3 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(201, 122, 99, 0.15);
-  color: #fbcfe8;
-  border: 1px solid rgba(201, 122, 99, 0.35);
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--primary-light);
+  font-size: 0.88rem;
   padding: 8px 18px;
   border-radius: var(--radius-full);
-  font-size: 0.88rem;
   margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .footer-consultation-pill i {
@@ -1098,6 +1339,50 @@ h3 {
 }
 
 .footer-consultation-pill strong {
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   FOOTER CABINET SWITCH BOX (ÉLÉGANT & TRAVAILLÉ)
+   ========================================================================== */
+.footer-cabinet-switch-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-md);
+  padding: 14px 20px;
+  margin: 0 auto 24px;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.footer-cabinet-switch-box .switch-box-label {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  letter-spacing: 0.02em;
+}
+
+.footer-cabinet-switch-box .switch-box-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  transition: var(--transition);
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-cabinet-switch-box .switch-box-link:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
   color: #ffffff;
 }
 
@@ -1206,6 +1491,10 @@ h3 {
     align-items: center;
     gap: 8px;
     flex-shrink: 0;
+  }
+
+  .nav-actions .btn-cabinet-switch {
+    display: none;
   }
 
   .nav-phone-text {
