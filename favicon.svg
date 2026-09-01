@@ -1,3 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <text y="0.9em" font-size="90">🪷</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdfbf9" />
+      <stop offset="100%" stop-color="#f5ede7" />
+    </linearGradient>
+    <linearGradient id="lotusGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#b36650" />
+      <stop offset="60%" stop-color="#c97a63" />
+      <stop offset="100%" stop-color="#e29580" />
+    </linearGradient>
+    <linearGradient id="sideGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#8c4330" />
+      <stop offset="100%" stop-color="#c97a63" />
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7a9a8e" />
+      <stop offset="100%" stop-color="#506c62" />
+    </linearGradient>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#c97a63" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background Circle for contrast & SERP clarity -->
+  <circle cx="256" cy="256" r="236" fill="url(#bgGrad)" stroke="#ebdcd3" stroke-width="8" />
+
+  <!-- Lotus Flower Graphic -->
+  <g filter="url(#subtleShadow)">
+    <!-- Base Leaves (Sage Green) -->
+    <path d="M 256 390 C 200 410 130 400 90 350 C 130 365 200 370 256 390 Z" fill="url(#leafGrad)" />
+    <path d="M 256 390 C 312 410 382 400 422 350 C 382 365 312 370 256 390 Z" fill="url(#leafGrad)" />
+
+    <!-- Outer Petals (Terracotta Dark) -->
+    <path d="M 256 380 C 190 375 100 330 90 260 C 120 250 190 300 256 380 Z" fill="url(#sideGrad)" />
+    <path d="M 256 380 C 322 375 412 330 422 260 C 392 250 322 300 256 380 Z" fill="url(#sideGrad)" />
+
+    <!-- Mid Petals -->
+    <path d="M 256 380 C 200 360 140 280 155 180 C 195 220 235 300 256 380 Z" fill="url(#lotusGrad)" opacity="0.95" />
+    <path d="M 256 380 C 312 360 372 280 357 180 C 317 220 277 300 256 380 Z" fill="url(#lotusGrad)" opacity="0.95" />
+
+    <!-- Central Petal -->
+    <path d="M 256 380 C 215 300 205 200 256 110 C 307 200 297 300 256 380 Z" fill="url(#lotusGrad)" />
+
+    <!-- Center Accent Dot -->
+    <circle cx="256" cy="364" r="6" fill="#fefae0" opacity="0.9" />
+  </g>
 </svg>
