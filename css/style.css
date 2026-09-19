@@ -811,6 +811,7 @@ h3 {
 .service-card h3 {
   margin-bottom: 10px;
   font-size: 1.35rem;
+  font-weight: 700;
 }
 
 .service-card p {
@@ -1864,6 +1865,23 @@ h3 {
     grid-template-columns: 1fr;
     gap: 18px;
   }
+}
+
+.surgery-grid .service-icon {
+  background-color: var(--secondary-light);
+  color: var(--secondary);
+}
+
+.surgery-grid .service-card:hover {
+  border-color: var(--secondary);
+}
+
+.surgery-grid .service-card::before {
+  background: linear-gradient(90deg, var(--secondary), var(--secondary-hover));
+}
+
+.surgery-grid .service-price {
+  color: var(--secondary-hover);
 }
 
 .surgery-card {
