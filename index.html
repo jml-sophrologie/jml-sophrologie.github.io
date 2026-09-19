@@ -47,6 +47,40 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": "https://www.jmlsophrologie.fr/#website",
+        "url": "https://www.jmlsophrologie.fr/",
+        "name": "Jessica Macchi Latreille — Sophrologie Nice",
+        "inLanguage": "fr-FR"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.jmlsophrologie.fr/#practitioner",
+        "name": "Jessica Macchi Latreille",
+        "jobTitle": "Infirmière Diplômée d’État & Sophrologue Certifiée RNCP",
+        "image": "https://www.jmlsophrologie.fr/images/jessica_macchi_latreille.jpg",
+        "telephone": "+33759702272",
+        "email": "jmlsophrologie@gmail.com",
+        "knowsAbout": [
+          "Sophrologie",
+          "Périnatalité",
+          "Grossesse",
+          "Préparation à l'accouchement",
+          "Post-partum",
+          "Chirurgie",
+          "Préparation opératoire",
+          "Récupération post-opératoire",
+          "Gestion de la douleur",
+          "Gestion du stress"
+        ],
+        "sameAs": [
+          "https://www.instagram.com/jml.sophro",
+          "https://www.facebook.com/jml.sophro",
+          "https://fr.linkedin.com/in/jessica-latreille-36a35339a",
+          "https://linktr.ee/jmlsophrologie"
+        ]
+      },
+      {
         "@type": "HealthAndBeautyBusiness",
         "@id": "https://www.jmlsophrologie.fr/#business-nice",
         "name": "Jessica Macchi Latreille — Sophrologue & Infirmière DE (Centre Mum Care Nice)",
@@ -56,6 +90,7 @@
         "email": "jmlsophrologie@gmail.com",
         "url": "https://www.jmlsophrologie.fr/",
         "priceRange": "70€ - 80€",
+        "founder": {"@id": "https://www.jmlsophrologie.fr/#practitioner"},
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Centre Mum Care, 53 Rue Caffarelli",
@@ -83,6 +118,75 @@
             "closes": "20:00"
           }
         ],
+        "areaServed": [
+          {"@type": "AdministrativeArea", "name": "Nice (06000)"},
+          {"@type": "AdministrativeArea", "name": "Nice Gambetta / Fleurs"},
+          {"@type": "AdministrativeArea", "name": "Nice Métropole"}
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Prestations de Sophrologie",
+          "itemListElement": [
+            {
+              "@type": "OfferCatalog",
+              "name": "Sophrologie & Périnatalité",
+              "url": "https://www.jmlsophrologie.fr/perinatalite-nice.html",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Séance Sophrologie & Périnatalité au Cabinet Mum Care Nice",
+                    "description": "Accompagnement périnatalité : désir d'enfant, grossesse, préparation accouchement, post-partum.",
+                    "url": "https://www.jmlsophrologie.fr/perinatalite-nice.html"
+                  },
+                  "price": "70",
+                  "priceCurrency": "EUR"
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Séance Sophrologie & Périnatalité à Domicile (Nice)",
+                    "description": "Accompagnement périnatalité à votre domicile à Nice.",
+                    "url": "https://www.jmlsophrologie.fr/perinatalite-nice.html"
+                  },
+                  "price": "80",
+                  "priceCurrency": "EUR"
+                }
+              ]
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Sophrologie & Chirurgie",
+              "url": "https://www.jmlsophrologie.fr/chirurgie-nice.html",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Séance Sophrologie & Chirurgie au Cabinet Mum Care Nice",
+                    "description": "Préparation mentale, apaisement du stress préopératoire et récupération post-opératoire au cabinet.",
+                    "url": "https://www.jmlsophrologie.fr/chirurgie-nice.html"
+                  },
+                  "price": "70",
+                  "priceCurrency": "EUR"
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Séance Sophrologie & Chirurgie à Domicile (Nice)",
+                    "description": "Accompagnement chirurgie et convalescence à votre domicile à Nice.",
+                    "url": "https://www.jmlsophrologie.fr/chirurgie-nice.html"
+                  },
+                  "price": "80",
+                  "priceCurrency": "EUR"
+                }
+              ]
+            }
+          ]
+        },
         "sameAs": [
           "https://www.instagram.com/jml.sophro",
           "https://www.facebook.com/jml.sophro",
