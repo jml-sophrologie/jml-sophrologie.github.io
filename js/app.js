@@ -1,6 +1,6 @@
 /**
  * APPLICATION PRINCIPALE - JESSICA MACCHI LATREILLE
- * Sophrologie & Périnatalité au Centre Périnatal de Blausasc
+ * Sophrologie, Périnatalité & Chirurgie au Centre Mum Care à Nice
  */
 
 document.addEventListener('DOMContentLoaded', () => {

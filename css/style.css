@@ -1809,3 +1809,182 @@ h3 {
   border-color: var(--primary);
   box-shadow: 0 4px 12px rgba(201, 122, 99, 0.3);
 }
+
+/* ==========================================================================
+   HUB PRESTATIONS (PÉRINATALITÉ & CHIRURGIE)
+   ========================================================================== */
+.hub-cabinet-card.card-perinatalite::before {
+  background: linear-gradient(90deg, #c97a63, #d4a373);
+}
+
+.hub-cabinet-card.card-chirurgie::before {
+  background: linear-gradient(90deg, #607d72, #88ab9e);
+}
+
+.hub-card-badge.badge-perinatalite {
+  background: var(--primary-light);
+  color: var(--primary-dark);
+}
+
+.hub-card-badge.badge-chirurgie {
+  background: var(--secondary-light);
+  color: var(--secondary-hover);
+}
+
+.hub-card-btn.btn-perinatalite {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+.hub-card-btn.btn-perinatalite:hover {
+  background-color: var(--primary-hover);
+}
+
+.hub-card-btn.btn-chirurgie {
+  background-color: var(--secondary);
+  color: #ffffff;
+}
+
+.hub-card-btn.btn-chirurgie:hover {
+  background-color: var(--secondary-hover);
+}
+
+/* ==========================================================================
+   CHIRURGIE : TUILES DE PARCOURS OPÉRATOIRE
+   ========================================================================== */
+.surgery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .surgery-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+
+.surgery-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  position: relative;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.surgery-card:hover {
+  border-color: var(--secondary);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.surgery-card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.surgery-step-number {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--secondary-hover);
+  background: var(--secondary-light);
+  border: 1px solid #d1ded7;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.surgery-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.25;
+}
+
+.surgery-card-text {
+  font-size: 0.94rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* ==========================================================================
+   DOMICILE BOOKING PANEL (ALTERNATIVE AU CALENDRIER CAL.COM)
+   ========================================================================== */
+.domicile-booking-panel {
+  display: none;
+  background: linear-gradient(135deg, #fdfaf7 0%, #ffffff 100%);
+  border: 2px dashed #d1ded7;
+  border-radius: var(--radius-md);
+  padding: clamp(30px, 5vw, 50px) 24px;
+  margin: 16px;
+  text-align: center;
+}
+
+.domicile-booking-panel.active {
+  display: block;
+}
+
+.domicile-panel-icon {
+  width: 70px;
+  height: 70px;
+  background: var(--secondary-light);
+  color: var(--secondary-hover);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.9rem;
+  margin: 0 auto 18px;
+  border: 1px solid #d1ded7;
+}
+
+.domicile-booking-panel h3 {
+  font-size: clamp(1.4rem, 3.5vw, 1.8rem);
+  color: var(--text-main);
+  margin-bottom: 12px;
+}
+
+.domicile-booking-panel .domicile-desc {
+  color: var(--text-muted);
+  max-width: 620px;
+  margin: 0 auto 26px;
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.domicile-actions-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.domicile-info-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.86rem;
+  color: var(--text-main);
+  margin-top: 10px;
+}
+

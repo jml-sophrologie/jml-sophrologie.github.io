@@ -1,51 +1,49 @@
-# 🌸 Jessica Macchi Latreille — Sophrologie & Périnatalité
+# 🌸 Jessica Macchi Latreille — Sophrologie, Périnatalité & Chirurgie (Nice)
 
-> Site officiel du cabinet de sophrologie et périnatalité situé au **Centre Périnatal de Blausasc (La Pointe de Contes)** et au **Centre Mum Care (Nice)**.
+> Site officiel de sophrologie par Jessica Macchi Latreille, Infirmière Diplômée d'État et Sophrologue Certifiée, au **Centre Mum Care à Nice** (53 Rue Caffarelli, 06000 Nice).
 
 🌐 **Site officiel :** [https://www.jmlsophrologie.fr](https://www.jmlsophrologie.fr) (ou [https://jml-sophrologie.github.io](https://jml-sophrologie.github.io))
 
 ---
 
-## ✨ Présentation
+## ✨ Présentation des Prestations
 
-Site vitrine dédié à l'accompagnement en **sophrologie et périnatalité** par **Jessica Macchi Latreille**, Infirmière Diplômée d’État et Sophrologue Certifiée :
-- **Cabinet 1 (La Pointe de Contes) :** Centre Périnatal de Blausasc (7 Route Nationale, 06440 Blausasc) — Consultations le vendredi (10h00 - 18h15).
-- **Cabinet 2 (Nice) :** Centre Mum Care (53 Rue Caffarelli, 06000 Nice) — Consultations le mardi (9h00 - 13h00) et le jeudi (14h00 - 20h00).
-- **À domicile :** Vallée des Paillons & Métropole de Nice.
+Jessica Macchi Latreille allie sa rigueur soignante d'infirmière (IDE) et la sophrologie certifiée autour de deux accompagnements majeurs :
+- **Sophrologie & Périnatalité :** Désir d'enfant & PMA, grossesse sereine, préparation mentale à l'accouchement, post-partum, soutien à l'allaitement et équilibre du couple.
+- **Sophrologie & Chirurgie :** Anticiper, se préparer, mieux récupérer, gestion du stress opératoire le jour J, soulagement des douleurs post-opératoires et reprise de confiance corporelle.
+
+### 📍 Lieux & Modalités de consultation :
+- **Au Cabinet Mum Care :** 53 Rue Caffarelli, 06000 Nice — Consultations le mardi (9h00 - 13h00) et le jeudi (14h00 - 20h00). Réservation en ligne instantanée via [Cal.com](https://cal.com/jml-sophrologie).
+- **À Domicile :** Nice Métropole & communes environnantes. Réservation directe par téléphone ou SMS au 07 59 70 22 72.
 
 ---
 
 ## 🛠️ Caractéristiques techniques
 
 - **Frontend :** HTML5 sémantique, CSS3 moderne (Variables CSS, Flexbox & CSS Grid), JavaScript vanilla.
-- **Réservation en ligne :** Modules interactifs intégrés [Cal.com](https://cal.com/jml-sophrologie) multi-lieux synchronisés en temps réel avec Google Agenda.
-- **Design & Ergonomie :** 100 % responsive (smartphone, tablette, desktop), navigation croisée entre cabinets.
-- **SEO & Données Structurées :** Balisage Schema.org multi-établissements (Nice & Blausasc) et référencement local Alpes-Maritimes.
+- **Réservation hybride intelligente :** Module intégré Cal.com pour les consultations au cabinet Mum Care, et bascule instantanée vers prise de contact directe par téléphone / SMS pour les rendez-vous à domicile.
+- **Design & Ergonomie :** 100 % responsive (smartphone, tablette, desktop), navigation fluide entre spécialités.
+- **SEO & Référencement Local :** URLs optimisées (`perinatalite-nice.html`, `chirurgie-nice.html`), balisage Schema.org LocalBusiness & FAQPage, sitemap.xml actualisé.
 
 ---
 
 ## 📁 Structure du projet
 
 ```text
-├── index.html            # Portail d'accueil & Hub de sélection des cabinets
-├── nice.html             # Page dédiée Cabinet Nice (Centre Mum Care) & réservation
-├── blausasc.html         # Page dédiée Cabinet La Pointe de Contes & réservation
-├── sitemap.xml           # Plan du site indexé pour Google (les 3 URLs)
-├── robots.txt            # Directives pour les moteurs de recherche
+├── index.html                  # Portail d'accueil & Hub d'aiguillage vers les deux prestations
+├── perinatalite-nice.html      # Page dédiée Sophrologie & Périnatalité à Nice
+├── chirurgie-nice.html         # Page dédiée Sophrologie & Chirurgie à Nice
+├── nice.html                   # Redirection 301/meta vers perinatalite-nice.html
+├── blausasc.html               # Redirection 301/meta vers index.html
+├── sitemap.xml                 # Plan du site indexé pour Google
+├── robots.txt                  # Directives pour les moteurs de recherche
 ├── css/
-│   └── style.css         # Design system, composants Hub & responsive
+│   └── style.css               # Design system, palettes Terracotta/Sauge & responsive
 ├── js/
-│   └── app.js            # Menu mobile & interactions
-├── images/               # Visuels & photographies
-└── _Documents de travail/# Documentation interne & configuration (github_token.txt)
+│   └── app.js                  # Menu mobile & interactions de navigation
+├── images/                     # Visuels & photographies
+└── _Documents de travail/      # Documentation interne & configuration
 ```
-
----
-
-## 🚀 Déploiement GitHub Pages
-
-Le déploiement est automatisé via GitHub Pages sur la branche `main`.  
-Pour tout `git push`, le jeton d'authentification GitHub (Personal Access Token) est consigné dans `_Documents de travail/github_token.txt` (`REMOTE_PUSH_URL`).
 
 ---
 
@@ -56,4 +54,3 @@ Pour tout `git push`, le jeton d'authentification GitHub (Personal Access Token)
 - **Instagram :** [@jml.sophro](https://www.instagram.com/jml.sophro)
 - **LinkedIn :** [Jessica Latreille](https://fr.linkedin.com/in/jessica-latreille-36a35339a)
 - **Linktree :** [linktr.ee/jmlsophrologie](https://linktr.ee/jmlsophrologie)
-
